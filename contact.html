@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Bhanshree Creatives</title>
+  <meta name="description" content="Enquire with Bhanshree Creatives for events, production, social media and film. Email, WhatsApp and Instagram.">
+  <meta name="theme-color" content="#0b0b0b">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="contact">
+  <header class="site-header">
+    <a class="logo" href="index.html"><img src="Photo/Luxurious%20BhanShree%20Creatives%20Logo%20(1).png" alt="Bhanshree Creatives"></a>
+    <nav class="nav">
+      <a href="index.html" data-page="home">Home</a>
+      <a href="about.html" data-page="about">About</a>
+      <a href="services.html" data-page="services">Services</a>
+      <a href="work.html" data-page="work">Work</a>
+      <a href="contact.html" data-page="contact">Contact</a>
+    </nav>
+    <a class="btn header-cta" href="contact.html">Enquire</a>
+    <button class="nav-toggle" type="button" aria-label="Open menu"><span></span></button>
+  </header>
+
+  <section class="page-hero">
+    <p class="kicker">Contact</p>
+    <h1>Tell us the brief.</h1>
+  </section>
+
+  <section class="section">
+    <div class="contact-layout">
+      <div>
+        <p class="lede">For events, production, social retainers, films and scripts. We read every enquiry.</p>
+        <div class="contact-links">
+          <a href="mailto:bhanshreecreatives@gmail.com"><span>Email</span><span>bhanshreecreatives@gmail.com</span></a>
+          <a href="tel:+917840892108"><span>Phone</span><span>+91 78408 92108</span></a>
+          <a href="https://instagram.com/bhanshreecreatives" target="_blank" rel="noopener"><span>Instagram</span><span>@bhanshreecreatives</span></a>
+          <a data-whatsapp="Hello Bhanshree Creatives, I would like to discuss a project." target="_blank" rel="noopener"><span>WhatsApp</span><span>Message us</span></a>
+        </div>
+      </div>
+
+      <form class="form" data-enquiry>
+        <div class="field">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" required autocomplete="name">
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required autocomplete="email">
+        </div>
+        <div class="field">
+          <label for="phone">Phone</label>
+          <input id="phone" name="phone" type="tel" required autocomplete="tel">
+        </div>
+        <div class="field">
+          <label for="service">Service required</label>
+          <select id="service" name="service" required>
+            <option value="" selected disabled>Select a service</option>
+            <option>Event Management & Planning</option>
+            <option>Event Production</option>
+            <option>Social Media Management</option>
+            <option>Creative Media & Content Production</option>
+            <option>Scriptwriting & Creative Development</option>
+            <option>More than one / not sure</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="details">Project details</label>
+          <textarea id="details" name="details" required placeholder="Date, scale, city, references…"></textarea>
+        </div>
+        <button class="btn" type="submit">Send enquiry</button>
+        <p class="form-note">Submit opens WhatsApp with your details and a draft email to the studio. No account required.</p>
+      </form>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-top">
+      <p class="footer-brand">Bhanshree Creatives</p>
+      <div class="cta-actions">
+        <a href="mailto:bhanshreecreatives@gmail.com">Email</a>
+        <a href="https://instagram.com/bhanshreecreatives" target="_blank" rel="noopener">Instagram</a>
+        <a data-whatsapp target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+    </div>
+    <div class="footer-meta">
+      <span>Founded by Harshit Sharma</span>
+      <span>+91 78408 92108</span>
+      <span>© 2026 Bhanshree Creatives</span>
+    </div>
+  </footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/projects.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
