@@ -35,7 +35,7 @@ window.PROJECTS = [
   },
   {
     id: "aarohi-night",
-    title: "Halloween 2026",
+    title: "Halloween",
     category: "Event Production",
     year: "2026",
     location: "Jaipur",
@@ -66,7 +66,7 @@ window.PROJECTS = [
   },
   {
     id: "northline-drop",
-    title: "Halloween 2026",
+    title: "Halloween Night",
     category: "Creative Media",
     year: "2026",
     location: "Studio & street, Jaipur",
@@ -97,7 +97,7 @@ window.PROJECTS = [
   },
   {
     id: "inner-table",
-    title: "Halloween 2026",
+    title: "Halloween",
     category: "Event Management",
     year: "2024",
     location: "Private residence, Jaipur",
@@ -128,7 +128,7 @@ window.PROJECTS = [
   },
   {
     id: "studio-kala",
-    title: "Halloween 2026",
+    title: "Halloween Atmosphere",
     category: "Social Media",
     year: "2026",
     location: "Retainer · Instagram",
@@ -159,7 +159,7 @@ window.PROJECTS = [
   },
   {
     id: "after-rain",
-    title: "Halloween 2026",
+    title: "Halloween Production",
     category: "Scriptwriting",
     year: "2026",
     location: "Development",

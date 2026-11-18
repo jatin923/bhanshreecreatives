@@ -4,14 +4,25 @@
 
   const navToggle = document.querySelector(".nav-toggle");
   if (navToggle) {
+    navToggle.setAttribute("aria-controls", "primary-navigation");
+    navToggle.setAttribute("aria-expanded", "false");
     navToggle.addEventListener("click", function () {
       document.body.classList.toggle("nav-open");
+      navToggle.setAttribute("aria-expanded", document.body.classList.contains("nav-open") ? "true" : "false");
+      navToggle.setAttribute("aria-label", document.body.classList.contains("nav-open") ? "Close menu" : "Open menu");
     });
   }
+
+  const nav = document.querySelector(".nav");
+  if (nav) nav.id = "primary-navigation";
 
   document.querySelectorAll(".nav a").forEach(function (link) {
     link.addEventListener("click", function () {
       document.body.classList.remove("nav-open");
+      if (navToggle) {
+        navToggle.setAttribute("aria-expanded", "false");
+        navToggle.setAttribute("aria-label", "Open menu");
+      }
     });
   });
 
@@ -207,6 +218,7 @@
       if (!lightbox) return;
       lightbox.classList.remove("is-open");
       document.body.style.overflow = "";
+      if (location.hash) history.replaceState(null, "", location.pathname);
     }
 
     gallery.addEventListener("click", function (e) {
@@ -265,15 +277,7 @@
         details;
       const text = encodeURIComponent("New enquiry — Bhanshree Creatives\n" + body);
       const wa = "https://wa.me/" + site.phone + "?text=" + text;
-      const mail =
-        "mailto:" +
-        site.email +
-        "?subject=" +
-        encodeURIComponent("Enquiry: " + service) +
-        "&body=" +
-        encodeURIComponent(body);
       window.open(wa, "_blank");
-      window.location.href = mail;
     });
   }
 })();
